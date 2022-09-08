@@ -1,0 +1,24 @@
+<header class="header">
+  <h1 class="title">
+    {{ title }}!
+  </h1>
+  <p>angular permissions library</p>
+</header>
+
+<section class="content">
+  <mat-card class="example-card">
+    <a routerLink="/child1" routerLinkActive="link_active" class="link">Child 1</a>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <a routerLink="/child2/one" routerLinkActive="link_active" class="link">Child 2 / one</a>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <a routerLink="/child2/two" routerLinkActive="link_active" class="link">Child 2 / two</a>
+  </mat-card>
+</section>
+
+<app-timer role="admin" elementName="pageElement"></app-timer>
+
+<router-outlet></router-outlet>
